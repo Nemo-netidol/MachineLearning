@@ -5,7 +5,7 @@ mnist_raw = loadmat("mnist-original.mat") # ไฟล์นี้มี 70000 �
  
 mnist = {
     "data" : mnist_raw["data"].T, # data ทุกตัว
-    "target" : mnist_raw["label"][0] # label ตัวเลข
+    "target" : mnist_raw["label"][0] # label ตัวเลข 0 1 2 ... 9
 }
 x = mnist["data"]
 y = mnist["target"] # Label ชื่อของเลข
