@@ -29,8 +29,8 @@ df = pd.DataFrame({'Actual_data':y_test.flatten(), 'Predicted_data':y_predict.fl
 
 df1 = df.head(20)
 
-# df1.plot(kind='bar', figsize=(16, 10))
-# plt.show()
+df1.plot(kind='bar', figsize=(16, 10))
+plt.show()
 # figsize : a tuple of the width and height of the figure in inches
 
 # กราฟของข้อมูลทั้งหมด
@@ -38,7 +38,7 @@ df1 = df.head(20)
 # plt.title("Min & Max Temp")
 # plt.xlabel("MinTemp")
 # plt.ylabel("MaxTemp")
-plt.show()
+# plt.show()
 
 #Efficiency Measurement (Loss Function)
 print(f'MAE = {metrics.mean_absolute_error(y_test, y_predict)}')
