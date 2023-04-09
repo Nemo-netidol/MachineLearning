@@ -35,3 +35,4 @@ predict = model.predict(x_test)
 
 # Accuracy
 print("Accuracy :", accuracy_score(y_test, predict))
+print(f"Accuracy : {accuracy_score(y_test, predict) * 100:.2f}%")
